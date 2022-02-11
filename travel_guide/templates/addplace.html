@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Place</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="district" placeholder="Enter the district name">
+    <input type="text" name="place" placeholder="Enter the place name">
+    <input type="text" name="desc" placeholder="Please provide some discription">
+    <input type="file" name="image">
+    <input type="submit">
+</form>
+</body>
+</html>

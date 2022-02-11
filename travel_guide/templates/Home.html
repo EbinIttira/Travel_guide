@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+{% for i in placeskey %}
+<h3>
+    <a href="{% url 'travel_guideapp:placedetail' i.id %}">{{i.place}}</a><br>
+{% endfor %}
+<br><a href="addplace/">Add new place</a>
+</h3>
+{% endblock %}
